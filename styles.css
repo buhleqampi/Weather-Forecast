@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body, h1 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(./Assets/5fbf91aeba0c72a690939bc3ebf6cc8e.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  .weather-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .weather-card {
+    /* background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+
+    text-align: left; */
+    /* background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 40px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 250px;
+  }
+  
+  .weather-card h2 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+  }
+  
+  .weather-card p {
+    margin: 5px 0;
+    font-size: 1em;
+  }
+  
+  .weather-icon {
+    width: 100px; 
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+  } */ 
+   /* Reset some default styles */
+body, h1 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Basic body styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Container styling */
+  .container {
+    text-align: center;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  /* Weather cards styling */
+  .weather-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Individual card styling */
+  .weather-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: left;
+  }
+  
+  /* Card title styling */
+  .weather-card h2 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+  }
+  
+  /* Card content styling */
+  .weather-card p {
+    margin: 5px 0;
+    font-size: 1em;
+  }
+  
