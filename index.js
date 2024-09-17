@@ -1,6 +1,6 @@
 const queryURL = "http://api.openweathermap.org/data/2.5/weather";
 const APIKey = "cc3d36ee1252559edacf9330f27c3aeb";
-const cities = ["Cape Town", "Johannesburg","Durban", "East London", "Polokwane"]; 
+const cities = ["Cape Town", "Johannesburg","Durban", "East London", "Polokwane","Kimberly", "Nelspruit", "Bloemfontein"]; 
 const weatherCards = document.getElementById('weather-cards');
 
 async function getForecast() {
