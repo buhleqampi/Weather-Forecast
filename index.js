@@ -1,6 +1,6 @@
 const queryURL = "http://api.openweathermap.org/data/2.5/weather";
 const APIKey = "cc3d36ee1252559edacf9330f27c3aeb";
-const cities = ["Cape Town", "Johannesburg","Durban", "East London", "Polokwane","Kimberly", "Nelspruit", "Bloemfontein"]; 
+const cities = ["Cape Town", "Johannesburg","Durban", "East London", "Polokwane"]; 
 const weatherCards = document.getElementById('weather-cards');
 
 async function getForecast() {
@@ -48,27 +48,34 @@ function displayData(data, container) {
 }
 
 function initCarousel() {
-    const carouselWrapper = document.querySelector('.carousel-wrapper');
-    const nextButton = document.querySelector('.carousel-control.next');
-    const prevButton = document.querySelector('.carousel-control.prev');
-    
-    let index = 0;
-    const cardWidth = document.querySelector('.weather-card').offsetWidth + 20; 
-  
-    nextButton.addEventListener('click', () => {
-      if (index < cities.length - 1) {
-        index++;
-        carouselWrapper.style.transform = `translateX(-${index * cardWidth}px)`;
-      }
-    });
-  
-    prevButton.addEventListener('click', () => {
-      if (index > 0) {
-        index--;
-        carouselWrapper.style.transform = `translateX(-${index * cardWidth}px)`;
-      }
-    });
-  }
+  const carouselWrapper = document.querySelector('.carousel-wrapper');
+  const nextButton = document.querySelector('.carousel-control.next');
+  const prevButton = document.querySelector('.carousel-control.prev');
+  const cards = document.querySelectorAll('.weather-card');
+
+  if (cards.length === 0) return;
+
+  const cardWidth = cards[0].offsetWidth + 20; 
+  let index = 0;
+
+
+  carouselWrapper.style.width = `${cards.length * cardWidth}px`;
+
+  nextButton.addEventListener('click', () => {
+    if (index < cards.length - 1) {
+      index++;
+      carouselWrapper.style.transform = `translateX(-${index * cardWidth}px)`;
+    }
+  });
+
+  prevButton.addEventListener('click', () => {
+    if (index > 0) {
+      index--;
+      carouselWrapper.style.transform = `translateX(-${index * cardWidth}px)`;
+    }
+  });
+}
 
 getForecast();
+
 
